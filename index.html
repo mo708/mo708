@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;600;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>typing speed game</h1>
+    <section class="container">
+        <div class="select-menu"> 
+            <div class="select-btn">
+                <span>select level</span>
+                <i class="fa-solid fa-caret-down"></i>            
+            </div>
+            <ul class="options">
+                <li>easy</li>
+                <li>normal</li>
+                <li>hard</li>
+            </ul>
+        </div>
+
+        <div class="game-info">
+            you are playing on 
+            <span class="game-level"></span> level & you have 
+            <span class="game-time"></span> seconds to type the word.
+        </div>
+        <button>start playing</button>
+        <div class="current-word"></div>
+        <input type="text" id="text">
+        <div class="remainder">
+        </div>
+        
+        <div class="score-container">
+            <div class="time-left">
+                time left: <span></span> seconds
+            </div> 
+            <div class="score">
+                score: <span class="score-counter"> 0 </span> from <span class="total-number"> </span>
+            </div> 
+        </div>
+
+        <div class="result"></div>
+
+    </section>
+
+    <div class="instructions">
+        <h2>instructions</h2>
+        <ul>
+            <li>you must choose the level from the select menu above.</li>
+            <li>click start playing button.</li>
+            <li>each level has a specific set of words.</li>
+            <li>keep your aye on the time left.</li>
+            <li>if you leave the input empty the game will be over.</li>
+        </ul>
+        <div class="level-time">
+            <div>
+                <span>easy</span>  
+                <span>5 seconds</span>
+            </div>
+            <div>
+                <span>normal</span>  
+                <span>3 seconds</span>
+            </div>
+            <div>
+                <span>hard</span>  
+                <span>2 seconds</span>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
